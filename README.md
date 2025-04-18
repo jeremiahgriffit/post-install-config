@@ -228,10 +228,6 @@ Once done it should look like this:
 
 Thats it for this lab! We have concluded our inital setup for osTicket
 
-## Next steps
-
-[osTicket: Creating and Working Tickets](https://github.com/jeremiahgriffit/osTicket-Creating-and-Working-Tickets/tree/main)
-
 
 
 
