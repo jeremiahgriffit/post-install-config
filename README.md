@@ -22,11 +22,15 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Configure system-wide settings (timezone, default email, site name)
+- Set up helpdesk departments (e.g., IT Supportm Billing)
+- Add and assign agents to departments
+- Configure email fetching or piping (POP/IMAP or SMTP)
+- Set up SLA (Service Level Agreement) plans
+- Configure cron job for automated tasks (auto-ticket fetch, notifications)
+- Install and enable optional plugins (e.g., LDAP Auth, Auto Assign)
+- Customize email templates and autoresponders
+- Test the system by submitting and resolving a test ticket
 
 <h2>Configuration Steps</h2>
 
@@ -34,7 +38,8 @@ This tutorial outlines the post-install configuration of the open-source help de
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Upon successful installation of osTicket and removal of the setup directory, access the admin dashboard using the username and password that were set up during installation. This is your first step toward making the help desk work with your chosen settings.
+The help desk has several basic settings that need to be configured upon installation: the system email address, the default department, the timezone settings. Once these settings are properly configured, automated responses and ticket notifications will be sent as expected.
 </p>
 <br />
 
@@ -42,7 +47,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Then, establish departments—like "Technical Support" or "Billing"—by going to the Admin Panel and selecting Agents and then Departments. Place agents (staff members) in departments according to the assignments that work best for them.
+Next, navigate to Admin Panel > Manage > SLA Plans to set up service level agreements that dictate response deadlines for tickets. This is crucial to prioritize urgent issues and ensure that we keep our customers happy.Test the default flow by submitting a ticket to ensure that email routing and agent notifications work as intended.
 </p>
 <br />
 
@@ -50,6 +56,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Finally, set up the email piping or fetching (POP/IMAP) to convert incoming support emails into tickets automatically. You can configure this under Email > Remote Mail Fetching. If you’re hosting the system yourself, ensure that a cron job is running to check for new incoming emails on a consistent basis (if you’re hosted on IIS, use Task Scheduler). You can also install and enable a number of different plugins, such as an LDAP plugin for authentication, or internal ticket filters to set up custom routing rules for your tickets. Overall, osTicket is a very flexible system to help you grow your help desk.
 </p>
 <br />
